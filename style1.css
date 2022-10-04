@@ -162,7 +162,7 @@ header #navbar {
   justify-content: space-around;
   align-items: center;
   font-family: "Inter";
-  padding: 33px 99px;
+  padding: 33px 60px;
   flex-wrap: wrap;
 }
 .section1_threeCards__card {
@@ -213,10 +213,15 @@ header #navbar {
   font-style: normal;
   line-height: 125%;
   font-weight: 700;
-  padding: 10px;
+  margin: 4% 0 2% 0;
+}
+#section2 .section2_news_left {
+  padding: 0px 70px 0px 0px;
 }
 #section2 .section2_news_left_box {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 568px;
   height: 383px;
   background-image: url("./assets/images/Rectangle\ 184.svg");
@@ -224,6 +229,19 @@ header #navbar {
   object-fit: cover;
   color: #ffffff;
   font-family: "Inter";
+  padding: 0 83px 24px 24px;
+}
+#section2 .section2_news_left_box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Inter";
+}
+#section2 .section2_news_left_box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Inter";
+  margin-top: 2%;
 }
 #section2 .section2_news_right {
   display: flex;
@@ -232,12 +250,25 @@ header #navbar {
   flex-wrap: wrap;
 }
 #section2 .section2_news_right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 268px;
   height: 181px;
   object-fit: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Inter";
+  padding: 0 10px 10px 10px;
+}
+#section2 .section2_news_right_box p {
+  font-size: 11px;
+  font-weight: 400;
+}
+#section2 .section2_news_right_box h3 {
+  margin-top: 1%;
+  font-size: 13px;
+  font-weight: 700;
 }
 #section2 .box1 {
   background-image: url("./assets/images/Rectangle\ 185.svg");
@@ -250,9 +281,11 @@ header #navbar {
 #section2 .box3 {
   background-image: url("./assets/images/Rectangle\ 186.svg");
   object-fit: cover;
+  margin-top: 20px;
 }
 #section2 .box4 {
   background-image: url("./assets/images/Rectangle\ 188.svg");
   object-fit: cover;
+  margin-top: 20px;
 }
 /* ==============================SECTION2 END============================= */
