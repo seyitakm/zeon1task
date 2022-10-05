@@ -8,6 +8,8 @@
 /* ==============================NAVBAR START============================= */
 
 header #navbar {
+  overflow: hidden;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,6 +17,16 @@ header #navbar {
   width: 100%;
   height: 64px;
   padding: 0px 100px;
+  z-index: 100;
+}
+.sticky {
+  border-bottom: 1px solid #1d1d1d66;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 .navbar__logo img {
   width: 70px;
@@ -29,6 +41,8 @@ header #navbar {
   list-style: none;
 }
 .navbar_navigations ul li {
+  display: flex;
+  align-items: center;
   color: #181818;
   font-family: "Inter";
   padding: 20px;
@@ -311,6 +325,7 @@ header #navbar {
 #section3 {
   width: 100%;
   margin-top: 4%;
+  margin-bottom: 5%;
 }
 #section3 .section3_main {
   display: flex;
@@ -379,3 +394,84 @@ header #navbar {
   color: #ffffff;
 }
 /* ==============================SECTION2 END============================= */
+
+/* ==============================FOOTER START============================= */
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer_main img {
+  width: 869px;
+  height: 342px;
+}
+.footer_left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 130px 0px 0px;
+}
+.footer_left h2 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Inter";
+  color: rgba(255, 255, 255, 1);
+}
+.footer_left ul {
+  margin-top: 11%;
+}
+.footer_left ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 13px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px;
+  cursor: pointer;
+}
+.footer_left ul li img {
+  width: 18px;
+  height: 18px;
+}
+.footer_left a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer_left hr {
+  width: 200px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  margin-top: 4%;
+}
+footer hr {
+  width: 1169px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  margin-top: 2%;
+}
+.locationLi {
+  margin-top: 5%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.locationLi img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==============================FOOTER END============================= */
