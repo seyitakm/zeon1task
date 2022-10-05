@@ -81,6 +81,7 @@ header #navbar {
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
   color: #ffffff;
+  cursor: pointer;
 }
 #section1 .section1__leftArrow:hover {
   background-color: #ffffff;
@@ -97,6 +98,7 @@ header #navbar {
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 #section1 .section1__rightArrow:hover {
@@ -122,17 +124,17 @@ header #navbar {
   margin-top: 20px;
   font-weight: 400;
 }
-#section1 .section1_mainPic_left button {
+.btnAboutUs {
   padding: 9px 40px 10px;
   margin-top: 53px;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   background-color: rgba(255, 255, 255, 0);
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
-#section1 .section1_mainPic_left button:hover {
+.btnAboutUs:hover {
   background-color: #ffffff;
   color: #181818;
   transition: 0.3s;
@@ -155,6 +157,7 @@ header #navbar {
   width: 10px;
   height: 10px;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .section1_threeCards {
@@ -164,6 +167,7 @@ header #navbar {
   font-family: "Inter";
   padding: 33px 60px;
   flex-wrap: wrap;
+  color: rgba(24, 24, 24, 1);
 }
 .section1_threeCards__card {
   position: relative;
@@ -214,6 +218,7 @@ header #navbar {
   line-height: 125%;
   font-weight: 700;
   margin: 4% 0 2% 0;
+  color: #200e32;
 }
 #section2 .section2_news_left {
   padding: 0px 70px 0px 0px;
@@ -230,6 +235,12 @@ header #navbar {
   color: #ffffff;
   font-family: "Inter";
   padding: 0 83px 24px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#section2 .section2_news_left_box:hover {
+  transform: scale(0.9);
+  filter: blur(1px);
 }
 #section2 .section2_news_left_box p {
   font-size: 14px;
@@ -260,6 +271,12 @@ header #navbar {
   color: #ffffff;
   font-family: "Inter";
   padding: 0 10px 10px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#section2 .section2_news_right_box:hover {
+  transform: scale(0.9);
+  filter: blur(1px);
 }
 #section2 .section2_news_right_box p {
   font-size: 11px;
@@ -287,5 +304,78 @@ header #navbar {
   background-image: url("./assets/images/Rectangle\ 188.svg");
   object-fit: cover;
   margin-top: 20px;
+}
+/* ==============================SECTION2 END============================= */
+
+/* ==============================SECTION3 START============================= */
+#section3 {
+  width: 100%;
+  margin-top: 4%;
+}
+#section3 .section3_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3__aboutUs {
+  position: relative;
+  width: 1200px;
+  height: 480px;
+  margin-top: 5%;
+  background-color: #fafafa;
+}
+.section3__aboutUs img {
+  position: absolute;
+  width: 900px;
+  height: 480px;
+  z-index: 1;
+}
+.aboutUs_2ndImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.section3__aboutUs_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  position: absolute;
+  width: 540px;
+  height: 365px;
+  padding: 48px 48px 73px 48px;
+  z-index: 3;
+}
+.info1-3 {
+  top: 57px;
+  right: 64px;
+}
+.info2 {
+  top: 48px;
+  left: 64px;
+}
+.section3__aboutUs_info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #181818;
+  font-family: "Inter";
+}
+.section3__aboutUs_info p {
+  color: rgba(182, 182, 182, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: "Inter";
+}
+.section3__aboutUs_info button {
+  border: 1px solid rgba(15, 42, 89, 1);
+  color: rgba(15, 42, 89, 1);
+  margin-top: 20px;
+}
+.section3__aboutUs_info button:hover {
+  background-color: rgba(15, 42, 89, 1);
+  color: #ffffff;
 }
 /* ==============================SECTION2 END============================= */
