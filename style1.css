@@ -19,6 +19,46 @@ header #navbar {
   padding: 0px 100px;
   z-index: 100;
 }
+#toggle {
+  display: none;
+}
+.menu {
+  margin: 0 30px 0 0;
+}
+label {
+  font-size: 26px;
+  line-height: 70px;
+  margin: 0 40px 0 0;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.menu ul li {
+  display: flex;
+  align-items: center;
+  color: #181818;
+  font-family: "Inter";
+  padding: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu ul img {
+  width: 1px;
+  height: 20px;
+}
+.menu ul li img {
+  width: 12px;
+  height: 12px;
+}
+
 .sticky {
   border-bottom: 1px solid #1d1d1d66;
   position: fixed;
@@ -33,29 +73,7 @@ header #navbar {
   height: 36px;
   cursor: pointer;
 }
-.navbar_navigations ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-.navbar_navigations ul li {
-  display: flex;
-  align-items: center;
-  color: #181818;
-  font-family: "Inter";
-  padding: 20px;
-  font-size: 14px;
-}
-.navbar_navigations ul img {
-  width: 1px;
-  height: 20px;
-}
-.navbar_navigations ul li img {
-  width: 12px;
-  height: 12px;
-}
+
 #navbar .navbar_lang {
   display: flex;
   flex-direction: row;
@@ -74,6 +92,34 @@ header #navbar {
   cursor: pointer;
   margin-left: 2%;
 }
+/* ####RESPONSIVE### */
+@media screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+  #navbar .navbar_lang {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+}
+/* ####RESPONSIVE### */
+
 /* ==============================NAVBAR END============================= */
 
 /* ==============================SECTION1 START============================= */
@@ -243,6 +289,7 @@ header #navbar {
   justify-content: flex-end;
   width: 568px;
   height: 383px;
+  background-size: cover;
   background-image: url("./assets/images/Rectangle\ 184.svg");
   background-repeat: no-repeat;
   object-fit: cover;
@@ -253,8 +300,9 @@ header #navbar {
   transition: 0.3s;
 }
 #section2 .section2_news_left_box:hover {
-  transform: scale(0.9);
-  filter: blur(1px);
+  transform: scale(0.95);
+  background-image: linear-gradient(45deg, transparent, #afafb239, #83809c3f),
+    url("./assets/images/Rectangle\ 184.svg");
 }
 #section2 .section2_news_left_box p {
   font-size: 14px;
@@ -288,9 +336,25 @@ header #navbar {
   cursor: pointer;
   transition: 0.3s;
 }
-#section2 .section2_news_right_box:hover {
-  transform: scale(0.9);
-  filter: blur(1px);
+#section2 .box1:hover {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #afafb239, #83809c3f),
+    url("./assets/images/Rectangle\ 185.svg");
+}
+#section2 .box2:hover {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #afafb239, #83809c3f),
+    url("./assets/images/Rectangle\ 187.svg");
+}
+#section2 .box3:hover {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #afafb239, #83809c3f),
+    url("./assets/images/Rectangle\ 186.svg");
+}
+#section2 .box4:hover {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #afafb239, #83809c3f),
+    url("./assets/images/Rectangle\ 188.svg");
 }
 #section2 .section2_news_right_box p {
   font-size: 11px;
@@ -455,12 +519,12 @@ footer {
 
 .footer_left hr {
   width: 200px;
-  border: 1px solid rgba(38, 38, 38, 1);
+  border: 1px solid rgba(38, 38, 38, 0.429);
   margin-top: 4%;
 }
 footer hr {
   width: 1169px;
-  border: 1px solid rgba(38, 38, 38, 1);
+  border: 1px solid rgba(38, 38, 38, 0.408);
   margin-top: 2%;
 }
 .locationLi {
@@ -468,6 +532,7 @@ footer hr {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 .locationLi img {
   width: 20px;
