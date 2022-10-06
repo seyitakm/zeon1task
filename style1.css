@@ -626,6 +626,11 @@ label {
     text-align: start;
   }
 }
+@media screen and (max-width: 300px) {
+  #section2 {
+    padding: 10px 11px;
+  }
+}
 /* ==============================SECTION2 END============================= */
 
 /* ==============================SECTION3 START============================= */
@@ -973,6 +978,15 @@ footer hr {
   }
 }
 @media screen and (max-width: 430px) {
+  #locationImg {
+    width: 265px;
+    height: 129px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .footer_left {
+    padding-right: 65px;
+  }
   #locationImg {
     width: 265px;
     height: 129px;
