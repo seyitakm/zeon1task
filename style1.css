@@ -94,7 +94,11 @@ label {
 }
 /* ####RESPONSIVE### */
 @media screen and (max-width: 820px) {
+  header #navbar {
+    padding: 0 40px;
+  }
   label {
+    width: 4px;
     display: block;
     cursor: pointer;
   }
@@ -117,6 +121,12 @@ label {
   }
 }
 @media screen and (max-width: 470px) {
+  header #navbar {
+    padding: 0 20px;
+  }
+  label {
+    width: 2px;
+  }
 }
 /* ####RESPONSIVE### */
 
@@ -271,6 +281,27 @@ label {
   #section1 .section1_mainPic_left {
     top: 310px;
   }
+  .section1_threeCards {
+    justify-content: flex-start;
+  }
+  .section1_threeCards__card {
+    width: 426px;
+    height: 125px;
+    margin-left: 3%;
+  }
+  .section1_threeCards__card:last-child {
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .section1_threeCards {
+    flex-direction: column;
+  }
+  .section1_threeCards__card {
+    width: 486px;
+    height: 133px;
+    margin-top: 5%;
+  }
 }
 @media screen and (max-width: 990px) {
   #section1 .section1_mainPic__pic {
@@ -282,6 +313,14 @@ label {
   }
   #section1 .section1_mainPic_left {
     top: 351px;
+  }
+  .section1_threeCards {
+    flex-direction: column;
+  }
+  .section1_threeCards__card {
+    width: 486px;
+    height: 133px;
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 870px) {
@@ -304,6 +343,20 @@ label {
   #section1 .section1__rightArrow {
     display: none;
   }
+  .section1_threeCards {
+    flex-direction: column;
+  }
+  .section1_threeCards__card {
+    width: 486px;
+    height: 133px;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section1_threeCards__card {
+    width: 343px;
+    height: 111px;
+  }
 }
 @media screen and (max-width: 580px) {
   #section1 .section1_mainPic__pic {
@@ -314,6 +367,30 @@ label {
   }
   #section1 .section1_mainPic_left {
     top: 237px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1_threeCards {
+    padding: 30px 1px;
+  }
+  .section1_threeCards__card {
+    width: 282px;
+    height: 106px;
+  }
+  .section1_threeCards__card img {
+    width: 80px;
+    height: 90px;
+  }
+  .section1_threeCards__card h2 {
+    font-size: 14px;
+  }
+  .section1_threeCards__card p {
+    font-size: 11px;
+  }
+  #section1 .section1_mainPic__pic {
+    width: 269px;
+    height: 158px;
+    top: 399px;
   }
 }
 /* ==============================SECTION1 END============================= */
@@ -523,6 +600,31 @@ label {
   #section2 .section2_news_left_box h3 {
     font-size: 17px;
   }
+  #section2 h2 {
+    font-size: 20px;
+  }
+  .box1 {
+    margin-top: 20px !important;
+  }
+  .box2 {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  #section2 .section2_news_left_box {
+    width: 280px;
+    height: 173px;
+  }
+  #section2 .section2_news_left_box p {
+    font-size: 9px;
+  }
+  #section2 .section2_news_left_box h3 {
+    font-size: 13px;
+  }
+  #section2 h2 {
+    font-size: 16px;
+    text-align: start;
+  }
 }
 /* ==============================SECTION2 END============================= */
 
@@ -698,19 +800,59 @@ label {
 @media screen and (max-width: 490px) {
   .section3__aboutUs {
     width: 350px;
-    height: 375px;
+    height: 406px;
   }
   .section3__aboutUs img {
     width: 350px;
     height: 197px;
   }
   .section3__aboutUs_info {
-    width: 369px;
-    height: 192px;
+    width: 350px;
+    height: 220px;
   }
   .section3__aboutUs_info h3 {
     font-size: 17px;
     margin-top: 2%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section3__aboutUs {
+    width: 295px;
+    height: 375px;
+  }
+  .section3__aboutUs img {
+    width: 291px;
+    height: 149px;
+  }
+  .section3__aboutUs_info {
+    width: 295px;
+    height: 237px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section3__aboutUs {
+    width: 227px;
+    height: 365px;
+  }
+  .section3__aboutUs img {
+    width: 227px;
+    height: 117px;
+  }
+  .section3__aboutUs_info {
+    width: 227px;
+    height: 261px;
+  }
+  .section3__aboutUs_info p {
+    display: block;
+    white-space: nowrap;
+    font-size: 11px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .section3__aboutUs_info button {
+    padding: 2px 35px 3px;
   }
 }
 
@@ -828,6 +970,12 @@ footer hr {
   #locationImg {
     width: 372px;
     height: 130px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #locationImg {
+    width: 265px;
+    height: 129px;
   }
 }
 /* ==============================FOOTER END============================= */
