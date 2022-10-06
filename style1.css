@@ -609,6 +609,10 @@ label {
   .box2 {
     margin-top: 20px !important;
   }
+  #section2 .section2_news_right_box {
+    width: 274px;
+    height: 133px;
+  }
 }
 @media screen and (max-width: 460px) {
   #section2 .section2_news_left_box {
@@ -624,6 +628,10 @@ label {
   #section2 h2 {
     font-size: 16px;
     text-align: start;
+  }
+  #section2 .section2_news_right_box {
+    width: 274px;
+    height: 133px;
   }
 }
 @media screen and (max-width: 300px) {
