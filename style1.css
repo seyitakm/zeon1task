@@ -1020,11 +1020,14 @@ footer hr {
   font-family: "Inter";
   font-weight: 700;
   line-height: 44.8px;
+  color: #181818;
 }
 .aboutUsPage p {
+  color: #7f8d97;
   font-family: "Inter";
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
+  margin-top: 16px;
 }
 /* ==============================ABOUT US END============================= */
