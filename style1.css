@@ -49,9 +49,15 @@ label {
   align-items: center;
   color: #181818;
   font-family: "Inter";
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 14px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.menu div a:hover,
+.menu div a:focus {
+  background-color: #181818;
+  color: #ffffff;
 }
 .menu div img {
   width: 1px;
@@ -155,11 +161,12 @@ label {
   font-size: 20px;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
-#section1 .section1__leftArrow:hover {
+#section1 .section1__leftArrow:hover,
+#section1 .section1__leftArrow:focus {
   background-color: #ffffff;
   color: #181818;
-  transition: 0.3s;
 }
 #section1 .section1__rightArrow {
   width: 40px;
@@ -172,12 +179,13 @@ label {
   font-size: 20px;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
-#section1 .section1__rightArrow:hover {
+#section1 .section1__rightArrow:hover,
+#section1 .section1__rightArrow:focus {
   background-color: #ffffff;
   color: #181818;
-  transition: 0.3s;
 }
 #section1 .section1_mainPic_left {
   font-family: "Inter";
@@ -206,11 +214,12 @@ label {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
-.btnAboutUs:hover {
+.btnAboutUs:hover,
+.btnAboutUs:focus {
   background-color: #ffffff;
   color: #181818;
-  transition: 0.3s;
 }
 #section1 .section1_mainPic__pic {
   width: 734px;
@@ -249,6 +258,14 @@ label {
   width: 368px;
   height: 130px;
   border-left: 5px solid #0f2a59;
+  transition: all 0.5s ease-out;
+}
+.section1_threeCards__card:hover img {
+  display: none;
+}
+.section1_threeCards__card:hover {
+  background-color: #201f1f;
+  color: #f4eeee;
 }
 .section1_threeCards__card:first-child {
   border: none;
@@ -257,6 +274,10 @@ label {
   font-size: 16px;
   padding-left: 21px;
   padding-top: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
 }
 .section1_threeCards__card p {
   position: absolute;
@@ -264,6 +285,9 @@ label {
   padding-left: 21px;
   padding-top: 4px;
   z-index: 2;
+  font-weight: 300;
+  line-height: 21px;
+  font-family: "Inter";
 }
 .section1_threeCards__card img {
   width: 106px;
@@ -712,7 +736,8 @@ label {
   color: rgba(15, 42, 89, 1);
   margin-top: 20px;
 }
-.section3__aboutUs_info button:hover {
+.section3__aboutUs_info button:hover,
+.section3__aboutUs_info button:focus {
   background-color: rgba(15, 42, 89, 1);
   color: #ffffff;
 }
@@ -919,6 +944,13 @@ footer {
   color: rgba(255, 255, 255, 1);
   padding: 5px;
   cursor: pointer;
+  transition: all ease 0.3s;
+}
+.footer_left ul li:hover,
+.footer_left ul li:focus {
+  border-radius: 11px;
+  color: #201f1f;
+  background-color: #fafafa;
 }
 .footer_left ul li img {
   width: 18px;
@@ -948,6 +980,18 @@ footer hr {
   display: flex;
   align-items: center;
   padding: 5px;
+  transition: all ease 0.3s;
+}
+.locationLi a {
+  color: rgba(255, 255, 255, 1);
+  padding: 8px;
+  /* transition: all ease 0.3s; */
+}
+.locationLi:hover,
+.locationLi a:hover {
+  /* border-radius: 11px; */
+  color: #201f1f;
+  background-color: #fafafa;
 }
 .locationLi img {
   width: 20px;
