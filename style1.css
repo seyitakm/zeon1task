@@ -37,14 +37,14 @@ label {
   float: right;
 }
 
-.menu ul {
+.menu div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-.menu ul li {
+.menu div a {
   display: flex;
   align-items: center;
   color: #181818;
@@ -53,11 +53,11 @@ label {
   font-size: 14px;
   cursor: pointer;
 }
-.menu ul img {
+.menu div img {
   width: 1px;
   height: 20px;
 }
-.menu ul li img {
+.menu div a img {
   width: 12px;
   height: 12px;
 }
@@ -83,7 +83,7 @@ label {
   align-items: center;
   justify-content: space-between;
 }
-#navbar .navbar_lang p {
+#navbar .navbar_lang span {
   color: #181818;
   font-family: "Inter";
   font-weight: 400;
