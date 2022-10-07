@@ -21,6 +21,7 @@ header #navbar {
   height: 64px;
   padding: 0px 100px;
   z-index: 100;
+  /* position: fixed; */
 }
 #toggle {
   display: none;
@@ -68,7 +69,7 @@ label {
   height: 12px;
 }
 
-.sticky {
+/* .sticky {
   border-bottom: 1px solid #1d1d1d66;
   position: fixed;
   top: 0;
@@ -76,7 +77,7 @@ label {
 }
 .sticky + .content {
   padding-top: 60px;
-}
+} */
 .navbar__logo img {
   width: 70px;
   height: 36px;
@@ -989,7 +990,6 @@ footer hr {
 }
 .locationLi:hover,
 .locationLi a:hover {
-  /* border-radius: 11px; */
   color: #201f1f;
   background-color: #fafafa;
 }
