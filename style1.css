@@ -891,22 +891,23 @@ label {
     z-index: 0;
   }
 }
+
 @media screen and (max-width: 490px) {
   .section3__aboutUs:nth-child(2) img {
-    width: 350px;
+    width: 337px;
     height: 197px;
   }
   .section3__aboutUs {
-    width: 350px;
-    height: 450px;
+    width: 367px;
+    height: 478px;
   }
   .section3__aboutUs img {
-    width: 350px;
+    width: 337px;
     height: 197px;
   }
   .section3__aboutUs_info {
     width: 350px;
-    height: 277px;
+    height: 296px;
   }
   .section3__aboutUs_info h3 {
     font-size: 17px;
